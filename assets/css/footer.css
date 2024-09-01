@@ -1,0 +1,11 @@
+footer {
+    padding: 20px;
+    background-color: gray;
+    height: 100px;
+    
+}
+img {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 15px;
+}
