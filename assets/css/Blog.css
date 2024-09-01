@@ -1,3 +1,8 @@
+*,
+body {
+  margin: 0;
+}
+
 /* Blog Form */
 .blog-form {
     padding: 50px 0;
