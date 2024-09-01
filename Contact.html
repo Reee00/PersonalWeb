@@ -4,43 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-</head>
-
-
-<body>
     <style>
-        *, body {
+        *, 
+    body {
             margin: 0;
         }
     </style>
-    
-    <ul style="padding: 20px; background-color: grey; display: flex; flex-direction: row; gap: 20px; align-items: center;">
+    <style>
+        navbar-container {
+  padding: 20px;
+  background-color: gray;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.navbar-link {
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.navbar-contact-button {
+  background-color: orangered;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+    </style>
+    </head>
+    <body>
+    <nav>
+        <ul 
+            style="padding: 20px; background-color: gray; display: flex; flex-direction: row; gap: 20px; align-items: center;">
         <li>
             <img src="https://dumbways.id/assets/images/brandred.png"
-                style="width: 100px; height: 50px; object-fit: contain;" </li>
+                style="width: 75px; height: 50px; object-fit: contain;" />
+        </li>        
         <li>
             <a href="index.html" style="text-decoration: none;">Home</a>
         </li>
         <li>
-            <a href="blog kosong" style="text-decoration: none;">Blog</a>
+            <a href="blog.html" style="text-decoration: none;">Blog</a>
         </li>
-        <li style="display: flex; background-color: none; width: 100%; justify-content: flex-end;">
-            <a href="contact.html" style="background-color: orangered; padding: 20px; color: white; border-radius: 10px;">Contact Me</a>
+        <li style="display: flex; width: 100%; justify-content: flex-end;">
+            <a href="contact.html" style="background-color: orangered; padding: 20px; color: white; border-radius: 10px;"
+            >Contact Me</a
+            >
         </li>
     </ul>
-    <form style="display: flex; flex-direction: column; gap: 10px;">
-        <input placeholder="Enter your name" />
-        <input placeholder="Enter your email" />
-        <input placeholder="Enter your phone number" />
-        <select>
-            <option>Select an Option</option>
-            <option>Frontend Develeper</option>
-            <option>Backend Developer</option>
-            <option>Fullstack Develeper</option>
+    </nav>
+    
+    <form  onsubmit="sendEmail(event)" style="display: flex; flex-direction: column; gap: 10px;">
+        <input id="name" placeholder="Enter your name" />
+        <input id="email" placeholder="Enter your email" />
+        <input id="phoneNumber" placeholder="Enter your phone number" />
+        <select id="subject">
+            <option value="">Select an Option</option>
+            <option value="Frontend Developer">Frontend Develeper</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Fullstack Developer">Fullstack Developer</option>
         </select>
-        <textarea cols="30" rows="4" placeholder="Enter your message"></textarea>
-        <input type="submit" value="Send Message" />
+        <textarea 
+        id="message"
+        cols="30" rows="4" placeholder="Enter your message"></textarea>
+        <input type="submit" value="Submit" />
     </form>
+
+    <script src="assets/js/contact.js"></script>
 
 </body>
 
