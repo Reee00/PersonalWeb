@@ -1,3 +1,8 @@
+*,
+body {
+  margin: 0;
+}
+
 .navbar-logo-blog {
   width: 150px; 
   height: 100px; 
