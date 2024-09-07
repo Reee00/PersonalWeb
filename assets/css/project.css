@@ -119,8 +119,3 @@ button:hover {
 .project-card .icons i:hover {
   color: #555;
 }
-
-.label-project-name {
-  width: 100%;
-  padding: 10px;
-}
