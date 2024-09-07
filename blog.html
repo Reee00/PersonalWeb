@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="assets/css/navbar-.css" />
     <link rel="stylesheet" href="assets/css/Blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <nav>
@@ -20,13 +24,13 @@
           />
         </li>
         <li>
-          <a href="index-week1.html" class="navbar-link"> Home </a>
+          <a href="index.html" class="navbar-link"> Home </a>
         </li>
         <li>
-          <a href="blog-week1.html" class="navbar-link"> Blog </a>
+          <a href="Blog.html" class="navbar-link"> Blog </a>
         </li>
         <li class="navbar-right">
-          <a href="contact-week1.html" class="navbar-contact-button">Contact Me</a>
+          <a href="Contact.html" class="navbar-contact-button">Contact Me</a>
         </li>
       </ul>
     </nav>
@@ -35,18 +39,30 @@
       <div class="blog-form">
         <div class="form-container">
           <form onsubmit="addBlog(event)">
-            <h1>Create Post Blog</h1>
+            <h1>Create Project</h1>
             <div>
-              <label for="input-blog-title">Title</label>
-              <input id="input-blog-title" />
+            <label for="input-blog-title">Project Name</label>
+            <input id="input-blog-title" />
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" name="start-date" required>
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date" name="end-date" required>
             </div>
             <div>
-              <label for="input-blog-content">Content</label>
+              <label for="input-blog-content">Description</label>
               <textarea id="input-blog-content"></textarea>
             </div>
             <div>
-              <label>Upload Image</label>
-              <div class="input-blog-image-group">
+              <label>Technologies:</label>
+                <input type="checkbox" id="nodejs" name="technologies" value="Node Js">
+                <label for="nodejs">Node Js</label>
+                <input type="checkbox" id="reactjs" name="technologies" value="React Js">
+                <label for="reactjs">React Js</label>
+                <input type="checkbox" id="nextjs" name="technologies" value="Next Js">
+                <label for="nextjs">Next Js</label>
+                <input type="checkbox" id="typescript" name="technologies" value="Typescript">
+                <label for="typescript">Typescript</label>
+              <div class="input-blog-image-group"><br>
                 <label for="input-blog-image">
                   <p>Attach File</p>
                   <i class="fa-solid fa-paperclip"></i>
@@ -56,6 +72,8 @@
             </div>
             <div class="button-group">
               <button type="submit">Post Blog</button>
+              <button type="reset">Reset</button>
+
             </div>
           </form>
         </div>
@@ -68,6 +86,6 @@
       </div>
     </div>
 
-    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/Blog.js"></script>
   </body>
 </html>

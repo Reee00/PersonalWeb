@@ -1,4 +1,4 @@
-*,
+*, 
 body {
   margin: 0;
 }
@@ -10,7 +10,7 @@ body {
   border-radius: 5px;
 
 }
-navbar-container {
+.navbar-container {
   padding: 20px;
   background-color: gray;
   list-style-type: none;

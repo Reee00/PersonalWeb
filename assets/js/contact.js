@@ -24,7 +24,7 @@ if (!inputname.length) {
 //     );
 
 const link = document.createElement("a");
-  link.href = `mailto:${inputemail}?subject=${inputsubject}&body=Nama: ${inputname}\nNomor HP: ${inputphoneNumber}\nMessage: ${inputmessage}`;
+  link.href = `mailto:${inputemail}?subject=${inputsubject}&body=Nama: ${inputname}\n Nomor HP: ${inputphoneNumber}\n Message: ${inputmessage}`;
 
   link.click();
 

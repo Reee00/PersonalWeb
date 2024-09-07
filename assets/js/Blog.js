@@ -95,7 +95,7 @@ function renderBlog() {
                         <button class="btn-post">Delete Post</button>
                     </div>
                     <h1>
-                        <a href="blog-detail.html" target="_blank">${blogs[index].title}</a>
+                        <a href="blog.html" target="_blank">${blogs[index].title}</a>
                     </h1>
                     <div class="detail-blog-content">
                         ${getFullTime(blogs[index].createdAt)} | ${blogs[index].author}
