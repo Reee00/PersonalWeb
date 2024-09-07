@@ -1,0 +1,91 @@
+<!DOCTYPEhtml>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    
+
+    <link rel="stylesheet" href="assets/css/navbar-.css" />
+    <link rel="stylesheet" href="assets/css/project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar-container">
+        <li>
+          <img
+         
+            src="https://dumbways.id/assets/images/brandred.png"
+            class="navbar-logo-blog"
+          />
+        </li>
+        <li>
+          <a href="index.html" class="navbar-link"> Home </a>
+        </li>
+        <li>
+          <a href="MyProject.html" class="navbar-link"> My Project </a>
+        </li>
+        <li class="navbar-right">
+          <a href="Contact.html" class="navbar-contact-button">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>Create Project</h1>
+            <div>
+            <label for="input-blog-title">Project Name</label>
+            <input id="input-blog-title" />
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" name="start-date" required>
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date" name="end-date" required>
+            </div>
+            <div>
+              <label for="input-blog-content">Description</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+            <div>
+              <label>Technologies:</label>
+                <input type="checkbox" id="nodejs" name="technologies" value="Node Js">
+                <label for="nodejs">Node Js</label>
+                <input type="checkbox" id="reactjs" name="technologies" value="React Js">
+                <label for="reactjs">React Js</label>
+                <input type="checkbox" id="nextjs" name="technologies" value="Next Js">
+                <label for="nextjs">Next Js</label>
+                <input type="checkbox" id="typescript" name="technologies" value="Typescript">
+                <label for="typescript">Typescript</label>
+              <div class="input-blog-image-group"><br>
+                <label for="input-blog-image">
+                  <p>Attach File</p>
+                  <i class="fa-solid fa-paperclip"></i>
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button type="submit">Post Project</button>
+              <button type="reset">Reset</button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+      <div id="contents" class="blog-list">
+        <!-- dynamic content would be here -->
+        
+      </div>
+    </div>
+
+    <script src="assets/js/MyProject.js"></script>
+  </body>
+</html>
