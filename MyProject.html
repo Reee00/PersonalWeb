@@ -6,32 +6,10 @@
     <title>Project</title>
     
 
-    <link rel="stylesheet" href="assets/css/navbar-.css" />
     <link rel="stylesheet" href="assets/css/project.css" />
   </head>
   <body>
-    <nav>
-      <ul class="navbar-container">
-        <li>
-          <img
-         
-            src="https://dumbways.id/assets/images/brandred.png"
-            class="navbar-logo-blog"
-          />
-        </li>
-        <li>
-          <a href="index.html" class="navbar-link"> Home </a>
-        </li>
-        <li>
-          <a href="MyProject.html" class="navbar-link"> My Project </a>
-        </li>
-        <li class="navbar-right">
-          <a href="Contact.html" class="navbar-contact-button">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="blog">
+    <div class="container">
       <div class="blog-form">
         <div class="form-container">
           <form onsubmit="addBlog(event)">
@@ -49,15 +27,16 @@
               <textarea id="input-blog-content"></textarea>
             </div>
             <div>
-              <label>Technologies:</label>
-                <input type="checkbox" id="nodejs" name="technologies" value="Node Js">
-                <label for="nodejs">Node Js</label>
-                <input type="checkbox" id="reactjs" name="technologies" value="React Js">
-                <label for="reactjs">React Js</label>
-                <input type="checkbox" id="nextjs" name="technologies" value="Next Js">
+              <checkbox id="input-blog-technologies"/>
+              <label for="technologies">Technologies</label>
+              <label for="nodejs">Node Js</label>
+              <input type="checkbox" id="myCheck" name="technologies" value="Node Js">
+              <label for="reactjs">React Js</label>
+                <input type="checkbox" id="myCheck" name="technologies" value="React Js">
                 <label for="nextjs">Next Js</label>
-                <input type="checkbox" id="typescript" name="technologies" value="Typescript">
+                <input type="checkbox" id="myCheck" name="technologies" value="Next Js">
                 <label for="typescript">Typescript</label>
+                <input type="checkbox" id="myCheck" name="technologies" value="Typescript">
               <div class="input-blog-image-group"><br>
                 <label for="input-blog-image">
                   <p>Attach File</p>

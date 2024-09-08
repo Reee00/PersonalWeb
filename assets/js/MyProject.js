@@ -60,7 +60,9 @@ function getFullTime(time) {
 const blogs = [];
 function addBlog(event) {
   event.preventDefault();
-
+  var x = document.getElementById("myCheck");
+  x.checked = true;
+  const inputCheckbox = document.getElementById("input-blog-technologies").value;
   const inputTitle = document.getElementById("input-blog-title").value;
   const inputContent = document.getElementById("input-blog-content").value;
   const inputImage = document.getElementById("input-blog-image").files;
@@ -68,6 +70,7 @@ function addBlog(event) {
   const blobImage = URL.createObjectURL(inputImage[0]);
 
   const data = {
+    checkbox: inputCheckbox,
     title: inputTitle,
     content: inputContent,
     image: blobImage,
@@ -110,6 +113,8 @@ function renderBlog() {
             </div>
             `;
   }
+
+  
 
   document.getElementById("contents").innerHTML = html;
 }

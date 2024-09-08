@@ -1,61 +1,40 @@
-*, 
+*,
 body {
   margin: 0;
 }
 
-.navbar-logo-blog {
-  width: 150px; 
-  height: 100px; 
-  object-fit: cover; 
-  border-radius: 5px;
-
-}
-.navbar-container {
-  padding: 20px;
-  background-color: gray;
-  list-style-type: none;
+.skill {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  align-items: center;
+  margin-top: 30px;
 }
 
-.navbar-logo {
-  width: 50px;
-  height: 25px;
-  object-fit: contain;
+.social-media {
+  margin-top: 80px;
+  font-size: 10;
 }
 
-.navbar-link {
-  text-decoration: none;
+.social-media i {
+  margin-left: 20px;
+  font-size: 20px;
 }
 
-.navbar-right {
+.container {
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
+  flex-direction: row;
+  margin: 75px;
 }
 
-.navbar-contact-button {
-  background-color: orangered;
-  padding: 20px;
-  color: white;
-  border-radius: 10px;
-  text-decoration: none;
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
-.buttons {
-  margin-bottom: 20px;
+.right {
+  margin-top: 0px;
 }
 
-.download-btn {
-  background-color: #555;
-}
-
-.download-cv {
-  display: inline-block;
-  margin: 10px 0;
-  color: black;
-  font-weight: 700;
-  text-decoration: none;
+.skill {
+  flex-direction: column;
 }
